@@ -6,7 +6,7 @@
 /*switch*/
 .switch-marga{
     max-width: 300px;
-    max-height: 300px;
+    max-height: auto;
     padding-top: 13px;
     margin: auto;
     position: relative;
@@ -59,24 +59,26 @@ input:checked + .work::after {
 }
 .work::after {
     content: 'code';
-    font-family: 'Helvetica Rounded', 'Arial Rounded MT Bold','Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
     position: absolute;
-    right: 92px;
+    left: 165px;
     top: 31px;
     font-size: 18px;
     color: #CE67B6;
+    transition: 0.5s;
 }
 input:checked + .work::before {
     color: #CE67B6;
 }
 .work:before {
     content: 'illustration';
-    font-family: 'Helvetica Rounded', 'Arial Rounded MT Bold','Montserrat', sans-serif;
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
     position: absolute;
     left: 165px;
     top: 57px;
     font-size: 18px;
     color: #C6C9D3;
+    transition: 0.5s; /*change color type at the same time of circle*/
 }
 
 /*finish-switch*/
