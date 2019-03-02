@@ -1,3 +1,7 @@
+body {
+    font-family: 'Roboto Condensed', Helvetica, sans-serif;
+}
+
 .allPage {
     width: 100%;
     margin: auto;
@@ -82,3 +86,76 @@ input:checked + .work::before {
 }
 
 /*finish-switch*/
+
+/*genre*/
+
+.genre {
+     display: block;
+     width: 80%;
+     margin: auto;
+     padding-top: 5%;
+}
+
+.itemsGenre{
+    text-align: center;
+    float: left;
+    padding-right: 4%;
+    width: 29%;
+    margin: auto;
+    padding-top: 5%;
+}
+
+/*scienceFiction*/
+
+.check {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-size: contain;
+    border-radius: 100%;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 30%;
+    box-shadow: inset 0 0 5px rgba(167, 47, 47, 0.2);
+    transition: 0.5s;
+    cursor: pointer;    
+}
+
+
+.check:checked {
+    left: 0;
+    top: 0;
+    background-size: contain;
+    border-radius: 100%;
+    transform: scale(1.1);
+    box-shadow: inset 0 0 5px rgba(0,0,0,.2);
+    transition: 0.5s;
+}
+
+h6{
+    color: #C6C9D3;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.check:checked  + h6{
+    color: pink;
+    margin: 0;
+    padding-top: 4px;
+}
+
+.fiction{
+    background-image: url("./images/scienceFictionOff.png");
+}
+
+.fiction:checked {
+    background-image: url("./images/scienceFictionOn.png");
+}
+
+.horror{
+    background-image: url("./images/horrorOff.png");
+}
+
+.horror:checked {
+    background-image: url("./images/horrorOn.png");
+}
