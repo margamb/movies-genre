@@ -7,6 +7,12 @@ body {
     margin: auto;
 }
 
+.chooseOne{
+    width: 40%;
+    margin-left: 30%;
+    padding-top: 5%;
+}
+
 /*switch*/
 .switch-marga{
     max-width: 300px;
