@@ -7,9 +7,23 @@ body {
     margin: auto;
 }
 
-.chooseOne{
-    width: 40%;
-    margin-left: 30%;
+.header{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.title{
+    color: #C6C9D3;
+    padding-top: 5%;
+}
+
+.chooseimg{
+    width: 36%;
     padding-top: 5%;
 }
 
@@ -70,7 +84,7 @@ input:checked + .work::after {
     content: 'code';
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     position: absolute;
-    left: 165px;
+    left: 260px;
     top: 31px;
     font-size: 18px;
     color: #CE67B6;
@@ -83,7 +97,7 @@ input:checked + .work::before {
     content: 'illustration';
     font-family: 'Roboto Condensed', Helvetica, sans-serif;
     position: absolute;
-    left: 165px;
+    left: 218px;
     top: 57px;
     font-size: 18px;
     color: #C6C9D3;
@@ -100,11 +114,16 @@ input:checked + .work::before {
      margin: auto;
      padding-top: 5%;
      list-style: none;
+     cursor: pointer;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     padding-left: 0;
 }
 
 .itemsGenre{
     text-align: center;
-    float: left;
     padding-right: 4%;
     width: 29%;
     margin: auto;
@@ -122,7 +141,7 @@ input:checked + .work::before {
     -webkit-appearance: none;
     outline: none;
     border-radius: 30%;
-    box-shadow: inset 0 0 5px rgba(167, 47, 47, 0.2);
+    box-shadow: inset 0 0 5px rgba(51, 22, 22, 0.2);
     transition: 0.5s;
     cursor: pointer;    
 }
@@ -150,23 +169,25 @@ h6{
     padding-top: 4px;
 }
 
-.fiction{
+#fiction{
     background-image: url("./images/scienceFictionOff.png");
 }
 
-.fiction:checked {
+#fiction:checked {
     background-image: url("./images/scienceFictionOn.png");
 }
 
-.horror{
+#horror{
     background-image: url("./images/horrorOff.png");
 }
 
-.horror:checked {
+#horror:checked {
     background-image: url("./images/horrorOn.png");
 }
 
 /*POSTERS*/
+
+
 
 .containerPosters {
     padding-top: 15%;
@@ -219,7 +240,7 @@ img{
 
   h4 {
     font-weight: 400;
-    font-size: 14px;
+    font-size: 9px;
   }
   
   .poster:after { /*It´s square white*/
