@@ -185,6 +185,39 @@ h6{
     background-image: url("./images/horrorOn.png");
 }
 
+#love{
+    background-image: url("./images/loveOff.png");
+}
+
+#love:checked {
+    background-image: url("./images/loveOn.png");
+}
+
+#comedy{
+    background-image: url("./images/comedyOff.png");
+}
+
+#comedy:checked {
+    background-image: url("./images/comedyOn.png");
+}
+
+#action{
+    background-image: url("./images/actionOff.png");
+}
+
+#action:checked {
+    background-image: url("./images/actionOn.png");
+}
+
+#mystery{
+    background-image: url("./images/mysteryOff.png");
+}
+
+#mystery:checked {
+    background-image: url("./images/mysteryOn.png");
+}
+
+
 /*POSTERS*/
 
 
