@@ -5,7 +5,9 @@ body {
 .allPage {
     width: 100%;
     margin: auto;
+    max-width: 500px;
 }
+
 
 .header{
     width: 80%;
